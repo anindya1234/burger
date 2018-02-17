@@ -1,0 +1,49 @@
+<div class="container">
+    <div class="row">
+	    <div class="col-sm-6 left-side ">
+	    <h2 style="color:#069" class="head">Burger List</h2>
+	    <br>
+	        <ul>
+		        {{#each burgers}}
+		          {{#unless devoured}}
+		             <li>
+						{{burger_name}}
+
+						<button class="change-state" data-id="{{id}}">
+							{{#unless devoured}}DEVOUR!{{/unless}}
+						</button>
+					</li>
+		          {{/unless}}
+		        {{/each}}
+	        </ul>
+	    </div>
+
+	    <div class="col-sm-6 right-side">
+	         <h2 style="color:#069" class="head">Devoured Burger List</h2>
+	         <br>
+	        <ul>
+		      {{#each burgers}}
+		          {{#if devoured}}
+		          <li>
+		              {{burger_name}}
+		          </li>
+		          {{/if}}
+		        {{/each}}
+	        </ul>
+	    </div>
+    </div>
+    <div class="row">
+        <div  class="text-center bottom col-sm-12">
+		<h2  style="color:#069">Add a Burger</h2>
+			<form class="add-burger">
+
+			  <div class="form-group">
+			    <label for="bu"style="color:#069">Burger Name:</label>
+			    <input type="text" id="bu" name="name">
+			  </div>
+
+			  
+			  <button class="add" type="submit">Add Burger</button>
+			</form>    
+		</div>
+	</div>	

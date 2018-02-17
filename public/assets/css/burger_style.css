@@ -1,0 +1,36 @@
+
+ul{
+	color:#069;
+
+  padding: 5px;
+  margin: 5px;
+ 
+}
+
+
+
+.add,.change-state {
+  padding: 5px;
+  margin: 5px;
+   	color: white;
+   background: #069;
+}
+
+.form-group{
+
+	 padding-top:  15px;
+  margin: 5px;
+}
+
+.top{
+
+	height:200px;
+	padding-top: 20px;
+}
+.bottom{
+
+float:center;
+}
+.head{
+margin-top: 20px;
+}
